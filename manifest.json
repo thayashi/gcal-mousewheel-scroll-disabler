@@ -1,0 +1,13 @@
+{
+  "name": "Google Calendar Mousewheel　Scroll Disabler",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "This extension disables mouse wheel scroll behavior when it is month mode. It is annoying the displayed month changes by mouse wheel. If you don't like the behavior, this extension might help it.",
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/calendar/*"],
+      "js": ["user.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
